@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
+
+        //step2 구현 테스트 코드
         BlackjackCard card1 = new BlackjackCard(1, 1);
         BlackjackCard card2 = new BlackjackCard(2, 6);
         BlackjackCard card3 = new BlackjackCard(4, 12);
