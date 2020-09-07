@@ -14,11 +14,11 @@ BlackjackHand 클래스를 통해 기본 룰을 구현합니다.
 4. 카드를 더 받을 수 있습니다.  
 5. Ace는 일반적으로 11의 가치를 갖지만, 핸드 가치(카드 가치의 합)가 21이 넘어간 경우 1의 가치를 갖습니다.  
 # step4. 유연성과 확장성을 위해 Generic 클래스 구현 (구현완료)
-유연성과 확장성을 위해 Generic 클래스를 구현합니다.
+유연성과 확장성을 위해 Generic 클래스를 구현합니다.  
 Deck class와 BlackjackHand class 에 Generic class형태로 코드를 수정해서 BlackjackHand에서 형변환 없이 getValue()를 쓸수있게 변경했습니다.
 
 # step5. Blackjack game 실행
-Main class를 통해 딜러와 플레이어간의 Blackjack game을 구현합니다.
+Main class를 통해 딜러와 플레이어간의 Blackjack game을 구현합니다.  
 
 
 
