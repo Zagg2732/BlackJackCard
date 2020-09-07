@@ -22,3 +22,4 @@ public class BlackjackCard extends Card { // Card를 상속받아서 사용
         return rankNumber == 1;
     }
 }
+ 

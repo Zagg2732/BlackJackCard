@@ -1,13 +1,12 @@
-public class BlackjackHand extends Deck{
+public class BlackjackHand extends Deck<BlackjackCard>{
 
     public int getValue() {
         int value = 0;
         int aceCount = 0;
 
-        for (Card card : getCards()) { //for-each 문으로 핸드에 있는 카드목록 순회
-            BlackjackCard bjCard = (BlackjackCard) card; //BlackjackCard로 캐스팅
-            value += bjCard.getValue();
-            if (bjCard.isAce()) {  // Ace면 aceCount를 1증가
+        for (BlackjackCard card : getCards()) { //for-each 문으로 핸드에 있는 카드목록 순회
+            value += card.getValue();
+            if (card.isAce()) {  // Ace면 aceCount를 1증가
                 aceCount++;
             }
         }

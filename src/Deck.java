@@ -1,21 +1,21 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Deck {
+public class Deck<T extends Card> {  //Generic Class 구현. Deck class는 타입변수로 Card의 자식변수만을 받는다.
     //카드를 담는 리스트 만들기
-    private ArrayList<Card> cards = new ArrayList<>();
+    private ArrayList<T> cards = new ArrayList<T>();
 
     //getter 메소드
-    public ArrayList<Card> getCards(){
+    public ArrayList<T> getCards(){
         return cards;
     }
     //addCard로 Deck cards 에 card 추가
-    public void addCard(Card card){
+    public void addCard(T card){
         cards.add(card);
     }
     // Deck을 print하는 메소드
     public void print() {
-        for (Card c : cards) {
+        for (T c : cards) {
             System.out.println(c.toString());
         }
     }
